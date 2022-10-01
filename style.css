@@ -323,10 +323,84 @@ label {
 
 @media (max-width: 500px) {
     .mode-div {
-        z-index: 3;
+        padding: 0 10px;
+        width: 80px;
+    }
+    
+    input::placeholder {
+        font-size: 0.8em;
+    }
+    
+    label {
+        font-size: 1.2em;
+    }
+    
+    #modes {
+        font-size: 0.9em;
+        width: 75px;
     }
     .game-wrapper {
-        margin-left: 40px;
+        margin-left: 80px;
+        padding: 1.2em;
+        font-size: 0.8em;
+        width: 300px;
+        box-shadow: 4px 4px 4px rgb(0, 0, 0);
+    }
+    
+    .game-wrapper h2 {
+        background-color: cadetblue;
+        width: 210px;
+        padding: 0.2em;
+        margin-bottom: 17px;
+    }
+
+    .game-wrapper h2 span {
+        transform: translateY(2.5px);
+        font-size: 0.8em;
+    }
+
+    .word {
+        padding: 0.3em;
+    }
+    
+    #text {
+        margin-top: 25px;
+        margin-bottom: 60px;
+        height: 35px;
+        font-size: 1.1em;
+    }
+    
+    .time-wrapper {
+        left: 15px;
+    }
+    
+    .score-wrapper {
+        right: 15px;
+    }
+    
+    .game-start-wrapper button,.game-over-wrapper button {
+        padding: 0.8em;
+        font-size: 1.1em;
+    }
+    
+    .game-start-wrapper button {
+        width: 200px;
+    }
+
+    .toast-added-time, .toast-added-score {
+        width: 35px;
+        height: 35px;
+        background-color: rgb(0, 195, 255);
+        bottom: 55px;
+    }
+    
+    .toast-added-score {
+        right: 12px;
+        
+    }
+    
+    .toast-added-time {
+        left: 15px
     }
 
 }
