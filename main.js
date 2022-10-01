@@ -32,8 +32,8 @@ const initialPhase = () => {
     gameStartWrapper.innerHTML = 
     `
         <h1>Are you ready to type?</h1>
-        <p>Select the mode you like <br> <br>Press Play</p>
-        <button class="play-again-btn" onclick="startGame()">Play</button>
+        <p>Select the mode you like <br> <br>Press Enter to Play</p>
+        <button class="play-btn" onclick="startGame()">Play</button>
     `
     timeInterval = ''
 
@@ -85,7 +85,8 @@ const gameEnded = () => {
     gameOverDiv.innerHTML = `
         <h1>Game Ended</h1>
         <p>You scored ${score <= 1 ? score + ' point' : score + ' points'}</p>
-        <button class="play-again-btn" onclick="restartGame()">Play Again?</button>
+        <p>Play Again?</p>
+        <button class="play-again-btn" onclick="restartGame()">Press Enter</button>
     `
     gameOverDiv.classList.add('ended')
     modeDiv.classList.remove('slideout')
@@ -118,13 +119,12 @@ function startGame() {
     gameWrapper.classList.add('centered')
     gameStartWrapper.classList.add('started')
     text.focus()
-    
 } 
 
 function restartGame() {
     score = 0;
-    timeRemaining = 10;
-    timeDisplay.innerText = "10s"
+    timeRemaining = 25;
+    timeDisplay.innerText = "25s"
     gameOverDiv.classList.remove('ended')
     timeInterval = setInterval(timeUpdate, 1000)
     modeDiv.classList.add('slideout')
@@ -181,3 +181,13 @@ modeForm.addEventListener('change', (event) => {
     location.reload()
 })
 
+document.addEventListener('keyup', (event) => {
+    if (event.code == "Enter") {
+        if (!gameStartWrapper.classList.contains('started')) {
+            document.querySelector('.play-btn').click()
+        } 
+        if (gameOverDiv.classList.contains('ended')) {
+        document.querySelector('.play-again-btn').click()
+        }
+    }
+  });
