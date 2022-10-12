@@ -12,7 +12,7 @@ const gameStartWrapper = document.querySelector('.game-start-wrapper')
 const addedTimeToast = document.querySelector('.toast-added-time')
 const addedScoreToast = document.querySelector('.toast-added-score')
 
-const wordsArray = [ 'run', 'walk', 'code', 'computer', 'language', 'compile', 'rust', 'withdrawal', 'monitor', 'science', 'rock', 'metal', 'black', 'mobile', 'electricity', 'temperature', 'wire', 'chemical', 'pink', 'fan', 'blue','mountain', 'bucket', 'rocket', 'basketball', 'hoop', 'squiggly', 'concatenate', 'revamp', 'trait', 'inheritance', 'borrowing', 'ownership','struct', 'vector', 'implement', 'cargo', 'crate', 'unsigned','integer', 'float', 'boolean', 'string', 'character', 'print','escape', 'javascript', 'socks', 'documentation', 'authenticate', 'authorize']
+const wordsArray = [ 'run', 'walk', 'code', 'computer', 'language', 'compile', 'rust', 'withdrawal', 'monitor', 'science', 'rock', 'metal', 'black', 'mobile', 'electricity', 'temperature', 'wire', 'chemical', 'pink', 'fan', 'blue','mountain', 'bucket', 'rocket', 'basketball', 'hoop', 'squiggly', 'concatenate', 'revamp', 'trait', 'inheritance', 'borrowing', 'ownership','struct', 'vector', 'implement', 'cargo', 'crate', 'unsigned','integer', 'float', 'boolean', 'string', 'character', 'print','escape', 'javascript', 'socks', 'documentation', 'authenticate', 'authorize', 'mouthwash', 'leave', 'manuscript', 'brush', 'dissonance', 'time', 'year', 'prime', 'layout', 'white', 'master', 'java']
 
 let randomSelectedWord
 
