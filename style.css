@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: "Zalando Sans Expanded",'Rajdhani', sans-serif;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -23,6 +23,10 @@ body {
     overflow: hidden;
     background-color: aquamarine;
     position: relative;
+}
+
+audio {
+    visibility: hidden;
 }
 
 .mode-btn {
@@ -102,8 +106,8 @@ label {
 }
 
 .game-wrapper h2 {
-    background-color: cadetblue;
-    width: 270px;
+    background-color: rgb(90, 143, 145);
+    width: 400px;
     margin: 0 auto;
     padding: 0.4em;
     border-radius: 1px 8px 1px;
