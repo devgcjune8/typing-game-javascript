@@ -31,12 +31,11 @@ audio {
 
 #credits {
     position: absolute;
-    margin-bottom: 0px;
+    bottom: 0px;
 }
 
 #credits small {
-    position: absolute;
-    bottom: 0px;
+    
 }
  
 
