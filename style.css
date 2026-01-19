@@ -29,6 +29,17 @@ audio {
     visibility: hidden;
 }
 
+#credits {
+    position: absolute;
+    margin-bottom: 0px;
+}
+
+#credits small {
+    position: absolute;
+    bottom: 0px;
+}
+ 
+
 .mode-btn {
     cursor: pointer;
     position: absolute;
@@ -107,7 +118,7 @@ label {
 
 .game-wrapper h2 {
     background-color: rgb(90, 143, 145);
-    width: 400px;
+    width: 420px;
     margin: 0 auto;
     padding: 0.4em;
     border-radius: 1px 8px 1px;
